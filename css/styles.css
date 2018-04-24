@@ -1,0 +1,118 @@
+/*------------- CSS RESET -----------------------*/
+
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  line-height: 1em;
+}
+
+body{
+  /*width: 75%;
+  max-width: 700px;*/
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Libre Baskerville', Georgia, Times, 'Times New Roman',serif;*/
+  margin: auto;
+  background-color: #;
+  color: #333;
+  line-height: 1.8;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {display:none;}
+
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+
+@font-face {
+  font-family: 'Langdon';
+  src:url('../fonts/Langdon.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gate';
+  src:url('../fonts/BlackGate-Sans.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Milano Sky';
+  src:url('../fonts/MilanoSky-Regular.otf') format('opentype');
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 33vh 10vh 40vh 17vh;
+  background-color: #C5E7E5;
+  color: #444;
+}
+
+.box {
+  color:;
+  padding: 20px;
+  overflow-y: hidden;
+}
+
+.a {
+  grid-column-start: 1;
+  grid-column-end: -2;
+}
+
+.c {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.d {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+}
+
+.e {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Langdon';
+  font-weight: normal;
+  font-size: 10em;
+  line-height: .9em;
+  width: 50vw;
+  color: #F26D6F;
+}
+
+h2 {
+  font-family: 'Gate';
+  font-weight: normal;
+  font-size: 5em;
+  color: #749E9B;
+}
+
+p {
+  font-family: 'Gate';
+  padding-top: .7em;
+  font-size: 2.6em;
+}
+
+button {
+  background-color: #F26D6F;
+  margin-top: 0em;
+  padding: .4em;
+  border-radius: 10em;
+  font-family: 'Gate';
+  font-size: 3em;
+  border: none;
+  color: #C5E7E5;
+  outline: none;
+}
+
+button:hover {
+  opacity: .6;
+  cursor: pointer;
+  outline: none;
+}

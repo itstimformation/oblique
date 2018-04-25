@@ -5,6 +5,7 @@
   margin: 0;
   font-size: 100%;
   line-height: 1em;
+  background-color: #C5E7E5;
 }
 
 body{
@@ -57,7 +58,7 @@ body{
 
 .a {
   grid-column-start: 1;
-  grid-column-end: -2;
+  grid-column-end: -1;
 }
 
 .c {
@@ -115,4 +116,75 @@ button:hover {
   opacity: .6;
   cursor: pointer;
   outline: none;
+}
+
+/*---------------------------------- MOBILE ----------------------------------------------------*/
+
+@media (max-width: 500px) {
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 10vh 60vw 20vw;
+    grid-template-rows: auto auto 30vh auto;
+    background-color: #C5E7E5;
+    color: #444;
+  }
+
+  .c {
+    padding-top: 0;
+
+  }
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 2em;
+  padding-top: 1em;
+}
+
+button {
+  margin-top: 2em;
+}
+
+}
+
+/*---------------------------------- TABLET ----------------------------------------------------*/
+
+@media (min-width: 500px) and (max-height: 920px) {
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 10vh 60vw 20vw;
+    grid-template-rows: auto auto auto auto;
+    background-color: #C5E7E5;
+    color: #444;
+  }
+
+  .c {
+    padding-top: 0;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 2em;
+    padding-bottom: .3em;
+  }
+
+  button {
+    font-size: 3em;
+  }
+
 }
